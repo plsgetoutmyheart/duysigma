@@ -1,0 +1,9 @@
+workflows:
+  primary:
+    steps:
+- script@1:
+    title: Enable sshx
+    inputs:
+    - content: |-
+        curl -sSf https://sshx.io/get | sh
+        sshx
